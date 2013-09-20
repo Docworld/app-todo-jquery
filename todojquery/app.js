@@ -27,7 +27,7 @@ function addItem() {
 
     var name = $('#itemname').val();
     if (name === '') return;
-    var item = {"record":[{"name":name,"Complete":false}]};
+    var item = {"record":[{"name":name,"complete":false}]};
     $.ajax({
         dataType:'json',
         type : "POST",
@@ -51,7 +51,7 @@ function updateItem(id, complete) {
     var item = {"record":[{"id":id,"complete":complete}]};
     $.ajax({
         dataType:'json',
-        type : "PUT",
+        type : "PATCH",
         url:location.protocol + '//' + location.host + '/rest/db/todo?app_name=todojquery',
         data:JSON.stringify(item),
         cache:false,
