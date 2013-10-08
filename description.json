@@ -1,6 +1,6 @@
 {
 	"api_name":"todojquery",
-	"name":"Todo List jQuery w/SDK",
+	"name":"Todo List jQuery",
 	"description":"A simple jQuery application showing how to create, update, and delete database records on the DreamFactory Services Platform.",
 	"is_active":1,
 	"url":"/index.html",
