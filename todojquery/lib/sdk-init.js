@@ -5,7 +5,6 @@ window.onload = function () {
         var apiReady = document.createEvent("Event");
         apiReady.initEvent("apiReady", true, false);
     }
-
     // if app files hosted on DSP then use location.host
     var dsp_url = location.protocol + "//" +location.host + "/rest/api_docs";
     // if app files not hosted on DSP then replace this dsp_url with yours ( leave the /rest/api_docs part )
