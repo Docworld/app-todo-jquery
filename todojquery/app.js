@@ -80,7 +80,7 @@ function updateRecord(id, complete) {
     var item = {"record":[
         {"id":id, "complete":complete}
     ]};
-    df.apis.db.mergeRecords({"table_name":"todo", "body":item}, function (response) {
+    df.apis.db.updateRecords({"table_name":"todo", "body":item}, function (response) {
         getRecords();
     }, crudError
     );
